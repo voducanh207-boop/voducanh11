@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+    color: #333;
+    background-color: #ffffff;
+}
+
+/* Skip link: hidden until it receives keyboard focus */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    background-color: #facc15;
+    color: #000;
+    padding: 8px 14px;
+    font-weight: bold;
+}
+
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+    z-index: 10;
+}
+
+header {
+    background-color: #2563eb;
+    padding: 10px 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+/* 4. nav: inline-block, width about 80% */
+nav {
+    display: inline-block;
+    width: 80%;
+    background-color: #1e40af;
+    padding: 8px 10px;
+    text-align: center;
+}
+
+/* 5. Descendant selector: only the image inside nav, width about 10% */
+nav img {
+    width: 10%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    background-color: #f4f7fb;
+    font-size: 1.05rem;
+    padding: 10px 25px 25px;
+}
+
+footer {
+    background-color: #2563eb;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px 20px;
+    border-radius: 0 0 8px 8px;
+}
+
+/* 3. Existing li styling commented out
+li {
+    display: list-item;
+    width: 90%;
+    margin-bottom: 4px;
+}
+
+nav li {
+    display: inline-block;
+    width: 140px;
+    text-align: center;
+    margin-bottom: 0;
+}
+*/
+
+h1 {
+    text-align: center;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+h2 {
+    color: #2563eb;
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
+p {
+    line-height: 1.7;
+}
+
+/* 6 + 8. grid class: two columns of 40% */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 30px;
+}
+
+/* 7. Descendant selector: only images inside .grid are 100% wide */
+.grid img {
+    width: 100%;
+}
+
+.grid figure {
+    margin: 0;
+    text-align: center;
+}
+
+/* 9. flex class */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-box {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 5px 20px;
+    margin-bottom: 15px;
+    min-width: 180px;
+}

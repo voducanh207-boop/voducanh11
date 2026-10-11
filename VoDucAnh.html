@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 2. Skip link: the anchor comes BEFORE the content and links to the id on <main> -->
+    <a class="skip-link" href="#main-content">Skip to Main Content</a>
+
+    <header>
+        <h1>Personal Information</h1>
+    </header>
+
+    <nav>
+        <img src="hinhgau.png" alt="White bear logo">
+        <ul>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <section id="about">
+            <h2>1. About me</h2>
+            <p>
+                My full name is Vo Duc Anh, but everyone can call me "White bear".<br>
+                I am a Software Engineering student at FPT University.<br>
+                I enjoy playing sports such as football and basketball, playing games in my free time,
+                listening to music (especially English and Vietnamese songs), and exploring technology
+                and electronic devices.
+            </p>
+        </section>
+
+        <section id="education">
+            <h2>2. Education</h2>
+            <p>
+                FPT University.<br>
+                Bachelor of Software Engineering.<br>
+                2026 – 2029
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>3. Projects</h2>
+            <p>Project #1: Student Management.</p>
+            <ul>
+                <li>Java • OOP</li>
+            </ul>
+            <p>Project #2: Personal Portfolio.</p>
+            <ul>
+                <li>HTML / CSS</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>4. Skills</h2>
+            <!-- flex class: flex-wrap + justify-content -->
+            <div class="flex">
+                <div class="skill-box">
+                    <h3>Programming</h3>
+                    <ul>
+                        <li>C</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+                <div class="skill-box">
+                    <h3>Web</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <div class="skill-box">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>NetBeans</li>
+                        <li>Visual Studio Code</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>5. Gallery</h2>
+            <!-- grid class: two columns, each about 40% -->
+            <div class="grid">
+                <figure>
+                    <img src="hinh1.png" alt="My profile picture">
+                    <figcaption>My profile picture</figcaption>
+                </figure>
+                <figure>
+                    <img src="hinh2.png" alt="By the sea">
+                    <figcaption>By the sea</figcaption>
+                </figure>
+                <figure>
+                    <img src="hinhgau.png" alt="White bear eating a donut">
+                    <figcaption>White bear loves donuts</figcaption>
+                </figure>
+                <figure>
+                    <img src="fptlogo.png" alt="FPT University logo">
+                    <figcaption>FPT University</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="research">
+            <h2>6. Research Interests</h2>
+            <ul>
+                <li>Artificial Intelligence</li>
+                <li>AI in Education</li>
+                <li>Software Engineering</li>
+                <li>AI-assisted Programming</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>7. Contact me</h2>
+            <p>
+                Email: voducanh207@gmail.com<br>
+                GitHub: github.com/voducanh
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Vo Duc Anh – FPT University</p>
+    </footer>
+
+</body>
+</html>
